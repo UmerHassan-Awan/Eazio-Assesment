@@ -1,0 +1,26 @@
+<div class="login-header align-items-center justify-content-around">
+    <div class="header-left">
+        <img src="/assets/images/logo.png" alt="Eazio">
+    </div>
+    <div class="nav-tabs">
+        <p-tabView>
+            <p-tabPanel header="Home"></p-tabPanel>
+            <p-tabPanel header="Careers"></p-tabPanel>
+            <p-tabPanel header="Pricing"></p-tabPanel>
+            <p-tabPanel header="Features"></p-tabPanel>
+        </p-tabView>
+    </div>
+    <div class="header-right flex align-items-center gap-3">
+        <div class="lang-selection flex align-items-center gap-1">
+            <i class="ico-globe"></i>
+            <p-dropdown [className]="'dd-language'" [options]="[{name: 'English'}, {name: 'French'}]"
+                optionLabel="name"></p-dropdown>
+        </div>
+        <div class="vertical-divider"></div>
+        <div class="login-sec flex align-items-center gap-4">
+            <p>Log In</p>
+            <p-button label="Get Demo" styleClass="p-button-outlined p-button-warning button-demo"></p-button>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-download:before {
+  content: "\e926";
+  color: #c3cad9;
+}
+.ico-grid:before {
+  content: "\e925";
+  color: #c3cad9;
+}
+.ico-play:before {
+  content: "\e924";
+  color: #fff;
+}
+.ico-dot:before {
+  content: "\e923";
+  color: #c3cad9;
+}
+.ico-clock:before {
+  content: "\e920";
+  color: #c3cad9;
+}
+.ico-paper-pin:before {
+  content: "\e921";
+  color: #c3cad9;
+}
+.ico-flag:before {
+  content: "\e922";
+  color: #c3cad9;
+}
+.ico-gant:before {
+  content: "\e91f";
+  color: #c3cad9;
+}
+.ico-calender:before {
+  content: "\e91e";
+  color: #c3cad9;
+}
+.ico-plus-round:before {
+  content: "\e91d";
+  color: #c3cad9;
+}
+.ico-telegram:before {
+  content: "\e918";
+  color: #33bfff;
+}
+.ico-envelope:before {
+  content: "\e919";
+  color: #29cc39;
+}
+.ico-preview:before {
+  content: "\e91a";
+  color: #83f;
+}
+.ico-whatsapp:before {
+  content: "\e91b";
+  color: #29cc39;
+}
+.ico-phone:before {
+  content: "\e91c";
+  color: #f63;
+}
+.ico-fire:before {
+  content: "\e917";
+  color: #c3cad9;
+}
+.ico-task:before {
+  content: "\e910";
+  color: #3361ff;
+}
+.ico-dashboard:before {
+  content: "\e911";
+  color: #c3cad9;
+}
+.ico-invoice:before {
+  content: "\e912";
+  color: #c3cad9;
+}
+.ico-cloud:before {
+  content: "\e913";
+  color: #c3cad9;
+}
+.ico-team:before {
+  content: "\e914";
+  color: #c3cad9;
+}
+.ico-message:before {
+  content: "\e915";
+  color: #c3cad9;
+}
+.ico-settings:before {
+  content: "\e916";
+  color: #c3cad9;
+}
+.ico-person:before {
+  content: "\e90f";
+  color: #c3cad9;
+}
+.ico-compass:before {
+  content: "\e909";
+  color: #3361ff;
+}
+.ico-star:before {
+  content: "\e90a";
+  color: #c3cad9;
+}
+.ico-messenger:before {
+  content: "\e90b";
+  color: #c3cad9;
+}
+.ico-trading:before {
+  content: "\e90c";
+  color: #c3cad9;
+}
+.ico-world:before {
+  content: "\e90d";
+  color: #c3cad9;
+}
+.ico-building:before {
+  content: "\e90e";
+  color: #c3cad9;
+}
+.ico-search:before {
+  content: "\e907";
+  color: #c3cad9;
+}
+.ico-chev-right:before {
+  content: "\e908";
+  color: #c3cad9;
+}
+.ico-dots:before {
+  content: "\e905";
+  color: #c3cad9;
+}
+.ico-user:before {
+  content: "\e906";
+  color: #c3cad9;
+}
+.ico-bell:before {
+  content: "\e903";
+  color: #c3cad9;
+}
+.ico-cross:before {
+  content: "\e904";
+  color: #c3cad9;
+}
+.ico-bars:before {
+  content: "\e902";
+  color: #c3cad9;
+}
+.ico-eye:before {
+  content: "\e901";
+  color: #a7a3ff;
+}
+.ico-globe:before {
+  content: "\e900";
+  color: #3d474d;
+}

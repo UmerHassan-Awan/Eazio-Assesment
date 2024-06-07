@@ -1,0 +1,208 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+// presets start
+@import "/src/assets/styles/_variables.scss";
+@import "/src/assets/styles/typography.scss";
+@import "/src/assets/styles/_fonts.scss";
+
+:root {
+    font-size: 14px;
+}
+
+body ,
+body .p-component {
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Poppins, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+
+* {
+    //font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: 1px solid red;
+}
+
+sup{
+    color: #DF6C4F;
+    font-weight: 900;
+    font-size: 14px;
+    position: relative;
+    left: -3px;
+    top: 3px;
+}
+
+img {
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    accent-color: #00B23E;
+    color: #fff;
+}
+// presets ends
+.p-inputtext {
+    background: #FCFCFC !important;
+}
+
+.ht-5{
+    height: 5%;
+}
+.ht-10{
+    height: 10%;
+}
+.ht-20{
+    height: 20%;
+}
+.ht-30{
+    height: 30%;
+}
+.ht-40{
+    height: 40%;
+}
+.ht-50{
+    height: 50%;
+}
+.ht-60{
+    height: 60%;
+}
+.ht-70{
+    height: 70%;
+}
+.ht-75{
+    height: 75%;
+}
+.ht-80{
+    height: 80%;
+}
+.ht-85{
+    height: 85%;
+}
+.ht-90{
+    height: 90%;
+}
+.ht-100{
+    height: 100%;
+}
+
+.wd-5{
+    width: 5%;
+}
+
+.wd-10{
+    width: 10%;
+}
+.wd-15{
+    width: 15%;
+}
+.wd-20{
+    width: 20%;
+}
+.wd-25{
+    width: 25%;
+}
+.wd-30{
+    width: 30%;
+}
+.wd-40{
+    width: 40%;
+}
+.wd-50{
+    width: 50%;
+}
+.wd-60{
+    width: 60%;
+}
+.wd-70{
+    width: 70%;
+}
+.wd-75{
+    width: 75%;
+}
+.wd-80{
+    width: 80%;
+}
+.wd-85{
+    width: 85%;
+}
+.wd-90{
+    width: 90%;
+}
+.wd-100{
+    width: 100%;
+}
+
+.p-inputtext:enabled:focus{
+    box-shadow: none !important;
+    border-color: var(--dark-orange) !important;
+}
+
+.p-inputtext:enabled:focus, 
+.p-dropdown:not(.p-disabled).p-focus, 
+.p-multiselect:not(.p-disabled).p-focus{
+    // box-shadow: 0 0 0 0.2rem #88eaac !important;
+    // border-color: var(--secondary-bg) !important;
+
+    box-shadow: none !important;
+    border-color: var(--dark-orange) !important;
+}
+
+// .p-inputtext:enabled:hover, 
+// .p-dropdown:not(.p-disabled):hover,
+// .p-multiselect:not(.p-disabled):hover{
+
+//     border-color: var(--primary-bg) !important;
+// }
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hidden-xs{
+        display: none !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .hidden-md{
+        display: none !important;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .hidden-md{
+        display: none !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .hidden-lg{
+        display: none !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) -- This working on my PC */
+@media only screen and (min-width: 1200px) {
+    .hidden-xl{
+        display: none !important;
+    }
+
+    // .ht-75{
+    //     height: 80%;
+    // }
+}
+
+@media only screen and (max-device-width: 1600px) {
+    .ht-75{
+        height: 77%;
+    }
+
+    .ht-80{
+        height: 76vh;
+    }
+}

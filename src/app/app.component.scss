@@ -1,0 +1,150 @@
+:host ::ng-deep{
+
+    .p-toast {opacity: 1; width: 406px; z-index: 110222 !important; }
+    
+    .p-toast .p-toast-message{ 
+        height: 104px; 
+        background: #fff;
+        border: 0px;
+        border-width: 0px;
+        color: var(--jet-black);
+
+        &::before{
+            content: '\e92b';
+            font-family: 'icomoon';
+            font-size: 100px;
+            opacity: 0.1;
+            left: -8px;
+            top: 0px;
+            position: absolute;
+        }
+        
+        &.p-toast-message-error {
+            
+            &::before{
+                color: rgb(255, 58, 65);
+            }
+            
+            .p-toast-message-content{
+                .p-toast-message-icon{
+                    background: #FF3A41;
+                    color: #fff;
+                    border-radius: 50px;
+                    padding: 8px;
+                    font-size: 15px;
+                    &::before{
+                        content: "\e92a" !important;
+                        font-family: 'icomoon' !important;
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+        
+        &.p-toast-message-success {
+            
+            &::before{
+                color: rgb(69, 214, 127);
+            }
+            
+            .p-toast-message-content{
+                .p-toast-message-icon{
+                    background: #45D67F;
+                    color: #fff;
+                    border-radius: 50px;
+                    padding: 8px;
+                    font-size: 15px;
+                    &::before{
+                        content: "\e92a" !important;
+                        font-family: 'icomoon' !important;
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+
+        &.p-toast-message-customSuccess {
+            
+            &::before{
+                color: rgb(69, 214, 127);
+            }
+            
+            .p-toast-message-content{
+                .p-toast-message-icon{
+                    background: #45D67F;
+                    color: #fff;
+                    border-radius: 50px;
+                    padding: 8px;
+                    font-size: 15px;
+                    &::before{
+                        // content: "\e92a" !important;
+                        // font-family: 'icomoon' !important;
+                        font-size: 20px !important;
+                    }
+                }
+            }
+        }
+
+        &.p-toast-message-info {
+            
+            &::before{
+                color: rgb(79, 180, 223);
+            }
+            
+            .p-toast-message-content{
+                .p-toast-message-icon{
+                    background: #4FB4DF;
+                    color: #fff;
+                    border-radius: 50px;
+                    padding: 8px;
+                    font-size: 15px;
+                    &::before{
+                        content: "\e92c" !important;
+                        font-family: 'icomoon' !important;
+                        font-size: 20px !important;
+                    }
+                }
+            }
+        }
+     }
+    .p-toast-message-content{ height: 100%; align-items: center; }
+    
+    
+    .p-toast-message-text{
+        margin: 0 0 0 2rem !important;
+        letter-spacing: 0.36px;
+        width: 60%;
+
+        .p-toast-detail{
+            font-weight: 400;
+        }
+    }
+
+    .p-toast-icon-close{
+        color: #979797 !important;
+        background: #F2F2F2 !important;
+        width: 24.44px !important;
+        height: 24.44px !important;
+         .pi{
+            font-size: 10px;
+         }
+    }
+
+    .required_control::after {
+        color: #DF6C4F;
+        font-weight: 900;
+        content: '*';
+        position: relative;
+        top: -4px;
+
+    }
+
+    .input-error{
+        border-color: red;
+        .p-inputtext, .p-dropdown, .p-checkbox-box{
+            border-color: red;
+        }
+    }
+}
+
+

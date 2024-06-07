@@ -1,0 +1,50 @@
+<!-- login page container -->
+<div id="login">
+    <auth-screen-header></auth-screen-header>
+    <div class="login-content flex justify-content-around">
+        <div class="left flex flex-column justify-content-center">
+            <h3 class="heading1">Sign in to</h3>
+            <h3 class="heading2">Lorem Ipsum is simply </h3>
+            <p class="sub-heading mt-6">If you don’t have an account register</p>
+            <p class="sub-heading mt-3">You can <a [routerLink]="['/sign-up']" class="text-register cursor-pointer">Register here !</a></p>
+        </div>
+        <div class="right">
+            <h4 class="form-heading">Sign in</h4>
+            <!-- login form -->
+            <form class="login mt-5" (ngSubmit)="handleSubmit()">
+                <!-- input user id -->
+                <div class="input-group mb-4">
+                    <input type="text" id="user-id" placeholder="Enter email or user name"
+                        class="w-full mt-2 loginform-input" pInputText>
+                </div>
+                <!-- input password -->
+                <div class="input-group mb-4">
+                    <div class="relative">
+                        <input [type]="showPassword ? 'password' : 'text'" id="passowrd" placeholder="Password"
+                            class="w-full mt-2 loginform-input" pInputText>
+                        <div class="password-icon">
+                            <i class="ico-eye cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- remember & forgot password -->
+                <div class="flex justify-content-end mb-4">
+                    <a href="javascript:void(0)" class="text-forgotpassword">Forgot Password?</a>
+                </div>
+                <!-- submit/login button -->
+                 <a type="button" [routerLink]="['/dashboard']" class="w-full border-round-xl justify-content-center font-normal btn-submit" pButton>Login</a>
+            </form>
+
+
+            <div class="text-center">
+                <p class="mt-5" style="color: #B5B5B5;">or continue with</p>
+                <div class="flex justify-content-center gap-3 mt-5">
+                    <img src="/assets/images/Facebook.svg" class="social-logo" alt="Facebook">
+                    <img src="/assets/images/apple.svg" class="social-logo" alt="Apple">
+                    <img src="/assets/images/google.svg" class="social-logo" alt="Google">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

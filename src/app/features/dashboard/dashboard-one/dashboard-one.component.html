@@ -1,0 +1,309 @@
+<div class="content-wrapper">
+    <div class="tabs-wrapper">
+        <p-tabView styleClass="tabview-custom">
+            <p-tabPanel header="List Tasks">
+                <ng-template pTemplate="header">
+                    <i class="pi ico-task"></i>
+                    <span>List Tasks</span>
+                </ng-template>
+            </p-tabPanel>
+
+            <p-tabPanel header="Boards">
+                <ng-template pTemplate="header">
+                    <i class="pi ico-dashboard"></i>
+                    <span>Boards</span>
+                </ng-template>
+            </p-tabPanel>
+
+            <p-tabPanel header="Calendar">
+                <ng-template pTemplate="header">
+                    <i class="pi ico-calender"></i>
+                    <span>Calendar</span>
+                </ng-template>
+            </p-tabPanel>
+
+            <p-tabPanel header="Gantt">
+                <ng-template pTemplate="header">
+                    <i class="pi ico-Gantt"></i>
+                    <span>Gantt</span>
+                </ng-template>
+            </p-tabPanel>
+
+            <p-tabPanel header="Timeline">
+                <ng-template pTemplate="header">
+                    <i class="pi ico-bars"></i>
+                    <span>Timeline</span>
+                </ng-template>
+            </p-tabPanel>
+
+            <p-tabPanel header="Activity">
+                <ng-template pTemplate="header">
+                    <i class="pi ico-trading"></i>
+                    <span>Activity</span>
+                </ng-template>
+            </p-tabPanel>
+
+        </p-tabView>
+
+        <div class="search-bar flex gap-2 align-items-center justify-content-between bg-white">
+            <i class="pi ico-search"></i>
+            <input type="text" placeholder="Search Tasks" />
+        </div>
+    </div>
+
+
+    <div class="bread-crumbs">
+        <p-breadcrumb class="max-w-full" [model]="[{ label: 'Computer' }, { label: 'Notebook' }]"></p-breadcrumb>
+    </div>
+
+    <div class="flex">
+        <div class="left form-container">
+            <!-- Add Task From -->
+            <div class="grid m-0">
+                <div class="col-12">
+                    <div class="p-fluid">
+                        <div class="field">
+                            <label for="taskname" class="fs-12 fw-700 font-roboto text-color-grey3">Name Task</label>
+                            <input pInputText id="taskname" type="text" placeholder="Name Task" />
+                        </div>
+                        <div class="field">
+                            <label for="desc" class="fs-12 fw-700 font-roboto text-color-grey3">Description Task</label>
+                            <textarea rows="5" cols="30" id="desc" pInputTextarea
+                                placeholder="Description Task"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sub Tasks Todo -->
+            <div class="tasks-todo-wrapper mt-3 mb-5">
+                <p class="fs-12 fw-900 font-roboto text-color-grey3">Sub Tasks ToDo</p>
+
+                <div class="bg-white sub-task-form flex justify-content-between mt-4">
+                    <div class="left flex gap-2 align-items-center">
+                        <i class="pi ico-dot fs-8"></i>
+                        <p>|</p>
+                        <p class="fs-12 fw-700 font-roboto text-color-grey1">Type Sub Task</p>
+                    </div>
+                    <div class="right flex gap-3 align-items-center">
+                        <i class="pi ico-flag"></i>
+                        <i class="pi ico-paper-pin fs-10"></i>
+                        <i class="pi ico-clock"></i>
+                        <button>Save</button>
+                    </div>
+                </div>
+
+                <button class="btn-addTask mt-3">Add Task</button>
+            </div>
+
+            <!-- Attachments -->
+             <div class="attachment-wrapper">
+                <div class="flex justify-content-between align-items-center">
+                    <p class="fs-14 fw-900 font-roboto text-color-grey3">Attachments</p>
+                    <div class="flex gap-3 align-items-center">
+                        <i class="pi ico-grid"></i>
+                        <i class="pi ico-bars fs-12"></i>
+                        <p-button label="Download All" icon="pi ico-download" styleClass="p-button-sm btn-download"></p-button>
+                    </div>
+                </div>
+
+                <div class="attachments flex justify-content-between mt-6">
+                    <p-card header="" [style]="{ width: '100px' }">
+                        <ng-template pTemplate="header">
+                            <img alt="Card" class="card-image" src="assets/images/Image1.svg" />
+                            
+                            <div class="user-img">
+                                <img src="assets/images/avatars/Avatar5.svg">    
+                            </div>
+                        </ng-template>
+                        <ng-template pTemplate="footer">
+                            <p class="fs-12 fw-700 font-roboto text-color-grey3">Frame6.jpg</p>
+                            <p class="fs-12 fw-700 font-roboto text-color-grey mt-4">Sep 7 at 2:42 PM</p>
+                        </ng-template>
+                        
+                    </p-card>
+
+                    <p-card header="" [style]="{ width: '100px' }">
+                        <ng-template pTemplate="header">
+                            <img alt="Card" class="card-image" src="assets/images/Image2.svg" />
+                            
+                            <div class="user-img">
+                                <img src="assets/images/avatars/Avatar6.svg">    
+                            </div>
+                        </ng-template>
+                        <ng-template pTemplate="footer">
+                            <p class="fs-12 fw-700 font-roboto text-color-grey3">Change.pdf</p>
+                            <p class="fs-12 fw-700 font-roboto text-color-grey mt-4">Sep 7 at 2:42 PM</p>
+                        </ng-template>
+                        
+                    </p-card>
+
+                    <p-card header="" [style]="{ width: '100px' }">
+                        <ng-template pTemplate="header">
+                            <img alt="Card" class="card-image" src="assets/images/Image3.svg" />
+                            
+                            <div class="user-img">
+                                <img src="assets/images/avatars/Avatar7.svg">    
+                            </div>
+                        </ng-template>
+                        <ng-template pTemplate="footer">
+                            <p class="fs-12 fw-700 font-roboto text-color-grey3">Change.pdf</p>
+                            <p class="fs-12 fw-700 font-roboto text-color-grey mt-4">Sep 7 at 2:42 PM</p>
+                        </ng-template>
+                        
+                    </p-card>
+
+                    <p-card header="" [style]="{ width: '100px' }">
+                        <ng-template pTemplate="header">
+                            <img alt="Card" class="card-image" src="assets/images/Image4.svg" />
+                            
+                            <div class="user-img">
+                                <img src="assets/images/avatars/Avatar8.svg">    
+                            </div>
+                        </ng-template>
+                        <ng-template pTemplate="footer">
+                            <p class="fs-12 fw-700 font-roboto text-color-grey3">Change.pdf</p>
+                            <p class="fs-12 fw-700 font-roboto text-color-grey mt-4">Sep 7 at 2:42 PM</p>
+                        </ng-template>
+                        
+                    </p-card>
+                </div>
+             </div>
+        </div>
+        <div class="right flex-1">
+            <!-- Date & Time Tracking -->
+            <div class="align-items-center flex gap-2 justify-content-around tracking-wrapper">
+                <div>
+                    <p class="fs-12 fw-900 font-roboto text-color-grey">CREATED</p>
+                    <p class="fs-12 fw-900 font-roboto text-color-grey3 mt-4">Sep 2, 9:06 pm</p>
+                </div>
+                <p-divider layout="vertical"></p-divider>
+                <div>
+                    <p class="fs-12 fw-900 font-roboto text-color-grey">TIME TRACKED</p>
+                    <div class="flex align-items-baseline gap-2">
+                        <p-button icon="pi ico-play"
+                            styleClass="p-button-rounded p-button-text p-button-raised"></p-button>
+                        <p class="fs-12 fw-900 font-roboto text-color-grey3 mt-4">0:00</p>
+                    </div>
+                </div>
+                <p-divider layout="vertical"></p-divider>
+                <div>
+                    <p class="fs-12 fw-900 font-roboto text-color-grey">START DATE</p>
+                    <p class="fs-12 fw-900 font-roboto text-color-grey3 mt-4">Sep 3, 9:00 pm</p>
+                </div>
+                <div>
+                    <p>></p>
+                </div>
+                <div>
+                    <p class="fs-12 fw-900 font-roboto text-color-grey">DUE DATE</p>
+                    <p class="fs-12 fw-900 font-roboto text-color-grey3 mt-4">Sep 4, 9:00 pm</p>
+                </div>
+            </div>
+
+            <!-- Activities List -->
+            <div class="activitylist-wraper mt-4">
+                <p class="fs-12 fw-900 font-roboto text-color-grey">LAST ACTIVITY BY TASK</p>
+
+                <div class="activities mt-6 flex justify-content-between">
+                    <div class="left flex gap-2">
+                        <p class="fs-12 fw-700 font-roboto text-color-blue">You</p>
+                        <p class="fs-12 fw-700 font-roboto text-color-grey3">Created This Task</p>
+                    </div>
+                    <div class="right">
+                        <p class="fs-12 fw-900 font-roboto text-color-grey3">Sep 3, 16:00 pm</p>
+                    </div>
+                </div>
+
+                <div class="activities mt-3 flex justify-content-between">
+                    <div class="left flex gap-2">
+                        <p class="fs-12 fw-700 font-roboto text-color-blue">You</p>
+                        <p class="fs-12 fw-700 font-roboto text-color-grey3">Assigned To:</p>
+                        <p class="fs-12 fw-700 font-roboto text-color-blue">Kenneth Jordan</p>
+                    </div>
+                    <div class="right">
+                        <p class="fs-12 fw-900 font-roboto text-color-grey3">Sep 3, 16:00 pm</p>
+                    </div>
+                </div>
+
+                <div class="activities mt-3 flex justify-content-between">
+                    <div class="left flex gap-2">
+                        <p class="fs-12 fw-700 font-roboto text-color-blue">You</p>
+                        <p class="fs-12 fw-700 font-roboto text-color-grey3">Chandge Due Date from 6 Days Ago, 11am to 6 days ago</p>
+                    </div>
+                    <div class="right">
+                        <p class="fs-12 fw-900 font-roboto text-color-grey3">Sep 3, 16:00 pm</p>
+                    </div>
+                </div>
+
+                <div class="activities mt-3 flex justify-content-between">
+                    <div class="left flex gap-2">
+                        <p class="fs-12 fw-700 font-roboto text-color-blue">You</p>
+                        <p class="fs-12 fw-700 font-roboto text-color-grey3">Created Sub Task: «Change Style Now»</p>
+                    </div>
+                    <div class="right">
+                        <p class="fs-12 fw-900 font-roboto text-color-grey3">Sep 3, 16:00 pm</p>
+                    </div>
+                </div>
+
+                <div class="activities mt-3 flex justify-content-between">
+                    <div class="left flex gap-2">
+                        <p class="fs-12 fw-700 font-roboto text-color-blue">You</p>
+                        <p class="fs-12 fw-700 font-roboto text-color-grey3">Created Sub Task: « Style Now»</p>
+                    </div>
+                    <div class="right">
+                        <p class="fs-12 fw-900 font-roboto text-color-grey3">Sep 3, 16:00 pm</p>
+                    </div>
+                </div>
+
+                <div class="activities mt-3 flex justify-content-between">
+                    <div class="left flex gap-2">
+                        <p class="fs-12 fw-700 font-roboto text-color-blue">You</p>
+                        <p class="fs-12 fw-700 font-roboto text-color-grey3">Chandge Due Date from 6 Days Ago, 11am to 6 days ago</p>
+                    </div>
+                    <div class="right">
+                        <p class="fs-12 fw-900 font-roboto text-color-grey3">Sep 3, 16:00 pm</p>
+                    </div>
+                </div>
+
+                <div class="activities mt-3 flex justify-content-between">
+                    <div class="left flex gap-2">
+                        <p class="fs-12 fw-700 font-roboto text-color-blue">You</p>
+                        <p class="fs-12 fw-700 font-roboto text-color-grey3">Created Sub Task: «Change Style Now»</p>
+                    </div>
+                    <div class="right">
+                        <p class="fs-12 fw-900 font-roboto text-color-grey3">Sep 3, 16:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments Section -->
+             <div class="comments-wrapper mt-4">
+                <p class="fs-14 fw-900 font-roboto text-color-grey3">Comments</p>
+
+                <div class="comment flex gap-3 mt-5 mb-5">
+                    <img src="assets/images/avatars/Avatar4.svg">
+                    <div class="comment-box bg-white flex-1">
+                        <div class="info flex justify-content-between">
+                            <div class="flex gap-2">
+                                <p class="fs-12 fw-900 font-roboto text-color-grey3">You</p>
+                                <p class="fs-12 fw-700 font-roboto text-color-grey2">Commented</p>
+                            </div>
+                            <p class="fs-12 fw-900 font-roboto text-color-grey2">Just Now</p>
+                        </div>
+                        <div class="message mt-3">
+                            <p class="fs-12 fw-700 font-roboto text-color-grey1">Internet Advertising What Went Wrong</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+             <!-- Create Comment Section -->
+              <div class="create-comment-wrapper flex justify-content-between gap-4">
+                <input type="text" class="w-full" placeholder="Comment on Task">
+                <button type="button">Comment</button>
+              </div>
+
+        </div>
+    </div>
+
+</div>

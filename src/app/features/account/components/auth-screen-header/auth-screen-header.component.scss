@@ -1,0 +1,94 @@
+:host ::ng-deep {
+    .login-header {
+        display: flex;
+        padding: 40px 96px 40px 96px;
+    
+        .header-left>img {
+          width: 133px;
+          height: 40px;
+        }
+    
+        .dd-language {
+    
+          ::ng-deep .p-dropdown {
+            border: 0px;
+            gap: 5px;
+    
+            .p-dropdown-label {
+              background: #fff !important;
+              padding: 0px !important;
+            }
+    
+            .p-dropdown-trigger {
+              width: 1rem;
+              display: block;
+    
+              .pi-chevron-down {
+                font-size: 10px;
+                color: #3D474D;
+              }
+            }
+          }
+    
+        }
+    
+        .p-tabview-panels {
+          display: none;
+        }
+    
+        .vertical-divider {
+          width: 1px;
+          background: #3D474D;
+          height: 32px;
+        }
+    
+        .button-demo {
+          border: 1px solid #FF9002;
+          border-radius: 4px;
+          height: 42px;
+          color: #3D474D;
+          font-weight: 400;
+          font-size: 16px;
+    
+          .p-button-label {
+            font-weight: 400;
+          }
+        }
+    
+        .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+          border: solid #fff;
+          margin: 0 0 -19px 0;
+        }
+    
+        .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+          color: #3D474D;
+          font-weight: 700;
+        }
+    
+        .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+          font-weight: 400;
+        }
+    
+        .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+          padding-bottom: 8px;
+          padding-top: 12px;
+          border-bottom-color: #F4711E;
+          border-width: 0 0 4px 0;
+        }
+    
+        .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+          box-shadow: none;
+        }
+      }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-tabs, .header-right{
+    display: none !important;
+  }
+
+  .login-header{
+    display: block;
+    padding: 20px 0px 0px 15px;
+  }
+}

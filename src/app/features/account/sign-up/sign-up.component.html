@@ -1,0 +1,66 @@
+<!-- login page container -->
+<div id="sign-up">
+    <auth-screen-header></auth-screen-header>
+    <div class="login-content flex justify-content-around">
+        <div class="left flex flex-column justify-content-center">
+            <h3 class="heading1">Sign up to</h3>
+            <h3 class="heading2">Lorem Ipsum is simply </h3>
+            <p class="sub-heading mt-6">If you already have an account</p>
+            <p class="sub-heading mt-3">You can <a [routerLink]="['/login']" class="text-register cursor-pointer">Login here !</a></p>
+        </div>
+        <div class="right">
+            <h4 class="form-heading">Sign Up</h4>
+            <!-- login form -->
+            <form class="login mt-5" (ngSubmit)="handleSubmit()">
+                <!-- input user id -->
+                <div class="input-group mb-4">
+                    <input type="text" id="user-id" placeholder="Enter Email" class="w-full mt-2 loginform-input"
+                        pInputText>
+                </div>
+                <div class="input-group mb-4">
+                    <input type="text" id="user-id" placeholder="Create User name" class="w-full mt-2 loginform-input"
+                        pInputText>
+                </div>
+                <div class="input-group mb-4">
+                    <input type="text" id="user-id" placeholder="Contact number" class="w-full mt-2 loginform-input"
+                        pInputText>
+                </div>
+
+                <!-- input password -->
+                <div class="input-group mb-4">
+                    <div class="relative">
+                        <input [type]="showPassword ? 'password' : 'text'" id="passowrd" placeholder="Password"
+                            class="w-full mt-2 loginform-input" pInputText>
+                        <div class="password-icon">
+                            <i class="ico-eye cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group mb-4">
+                    <div class="relative">
+                        <input [type]="showPassword ? 'password' : 'text'" id="passowrd" placeholder="Confrim Password"
+                            class="w-full mt-2 loginform-input" pInputText>
+                        <div class="password-icon">
+                            <i class="ico-eye cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- submit/login button -->
+                <a type="button" [routerLink]="['/login']" class="w-full border-round-xl justify-content-center font-normal btn-submit" pButton>Register</a>
+            </form>
+
+
+            <div class="text-center">
+                <p class="mt-5" style="color: #B5B5B5;">or continue with</p>
+                <div class="flex justify-content-center gap-3 mt-5">
+                    <img src="/assets/images/Facebook.svg" class="social-logo" alt="Facebook">
+                    <img src="/assets/images/apple.svg" class="social-logo" alt="Apple">
+                    <img src="/assets/images/google.svg" class="social-logo" alt="Google">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

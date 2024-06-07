@@ -1,0 +1,130 @@
+:host ::ng-deep #login,
+#sign-up {
+  width: 100%;
+
+  .login-content {
+    padding: 0px 96px 0px 96px;
+
+    .text-register {
+      color: var(--text-purple);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .heading1 {
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 75px;
+    }
+
+    .heading2 {
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 52.5px;
+    }
+
+    .sub-heading {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .form-heading {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+
+  }
+
+  .loginform-input {
+    background-color: #FFF7ED !important;
+    border: 0px;
+    width: 369px !important;
+    border-radius: 8px;
+  }
+
+  .btn-submit {
+    background-color: var(--dark-orange);
+    border: 1px solid var(--dark-orange);
+    color: #fff;
+    border-radius: 9px !important;
+  }
+
+  .password-icon {
+    position: absolute;
+    right: 15px;
+    top: 19px;
+  }
+
+  .text-forgotpassword {
+    font-size: 13px;
+    font-weight: 400;
+    color: #B0B0B0;
+    text-decoration: none;
+  }
+
+  .social-logo {
+    width: 41.46px;
+    height: 41.46px;
+  }
+
+  input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.26px;
+    color: #FAB777;
+    opacity: 1;
+    /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.26px;
+    color: #FAB777;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.26px;
+    color: #FAB777;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+    .login-content{
+      flex-direction: column;
+      padding: 25px 15px 0px 15px;
+
+      .heading1{
+        font-size: 30px;
+        line-height: 60px;
+      }
+
+      .heading2{
+        font-size: 24px;
+        line-height: 30px;
+      }
+      .form-heading{
+        display: none;
+      }
+
+      .p-inputtext{
+        width: 100% !important;
+      }
+    }
+
+  }
+}
+
+

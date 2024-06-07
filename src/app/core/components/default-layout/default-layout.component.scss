@@ -1,0 +1,219 @@
+:host ::ng-deep {
+
+    .main-layout {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        overflow: hidden;
+        background-color: #F7F8FA;
+    }
+
+    .page_wrapper {
+        padding: 0px 5px 10px 5px;
+        height: calc(100vh - 7%);
+    }
+
+    .app_header_wrapper {
+        padding: 15px 25px 15px 25px;
+        border-bottom: 2px solid #EDEFF2;
+    }
+
+    .sidebar_wrapper {
+        width: 7%;
+        border-right: 2px solid #EDEFF2;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .content_wrapper {
+
+        .page-sidebar {
+            width: 360px;
+            padding: 30px 0px 30px 0px;
+            // height: 70%;
+            height: calc(100vh - 16vh);
+            overflow: auto;
+        }
+
+    }
+
+    .loading-text {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    .page_loader {
+        width: 4%;
+        height: 4%;
+    }
+
+    .p-button-rounded,
+    .p-button.p-button-text:enabled:hover {
+        background-color: #fff;
+        box-shadow: 0px 2px 5px 0px #26334D08;
+
+        &.icon-xs .pi {
+            font-size: 5px;
+        }
+
+        &.icon-sm .pi {
+            font-size: 10px;
+        }
+
+        &.icon-lg .pi {
+            font-size: 20px;
+        }
+
+        &.sz-50 {
+            width: 50px;
+            height: 50px;
+        }
+
+
+    }
+
+    .profile-image-container {
+        position: relative;
+        width: 100px;
+        height: 100px;
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+            img {
+                width: 80%;
+                height: 80%;
+                border-radius: 50%;
+            }
+        }
+
+        .half-border {
+            position: absolute;
+            top: -14px;
+            left: -14px;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .badge {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+            background-color: #007bff;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 2;
+        }
+    }
+
+    .menus-container {
+        .menus {
+            border: 2px solid #EDEFF2;
+            border-radius: 10px;
+            width: 240px;
+
+            .menu-row>div {
+                border: 1px solid #EDEFF2;
+                padding: 20px 25px 20px 25px;
+            }
+
+            .menu-row .active {
+                transform: scale(1.2);
+                border-radius: 15px;
+                background: #fff;
+                box-shadow: 0px 60px 120px 0px #26334D08;
+                border: 0px;
+            }
+        }
+
+    }
+
+    .social-bar {
+
+        .socialicon-wrapper {
+            background: #fff;
+            border-radius: 50px;
+            padding: 10px 20px 10px 20px;
+        }
+
+    }
+
+    .page-content{
+        padding: 30px 30px 30px 0px;
+        height: 84vh;
+        overflow: auto;
+    }
+
+
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .content_wrapper {
+        width: 100% !important;
+    }
+
+    .app_header_wrapper {
+        height: 6% !important;
+        padding-top: 7.89px !important;
+    }
+
+    .page_wrapper {
+        height: 95% !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+@media only screen and (width: 820px) {
+    .sidebar_wrapper {
+        width: 27% !important;
+    }
+
+    .content_wrapper {
+        width: 72.5% !important;
+    }
+}
+
+@media only screen and (width: 768px) {
+    .sidebar_wrapper {
+        width: 29% !important;
+    }
+
+    .content_wrapper {
+        width: 70.5% !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) -- This working on my PC */
+@media only screen and (min-width: 1200px) {}

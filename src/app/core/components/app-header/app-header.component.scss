@@ -1,0 +1,68 @@
+:host ::ng-deep {
+    
+    .badge-button{
+        .btn-badge{
+            background-color: #E62E7B;
+            width: 7px;
+            height: 7px;
+            border-radius: 100%;
+            position: absolute;
+            top: 23px;
+            right: 74px;
+            z-index: 9;
+        }
+    }
+    
+
+    .user-avatar {
+        width: 44.97px;
+        height: 44.97px;
+        border-radius: 50px;
+    }
+
+    .custom-avatar {
+        width: 44.97px;
+        height: 44.97px;
+        
+        label {
+            width: 44.97px;
+            height: 44.97px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+
+    .user-info{
+        i{
+            font-size: 20px;
+        }
+        p{
+            color: #6B7A99;
+            font-size: 13px;
+            font-weight: 700;
+            font-family: 'Roboto';
+        }
+    }
+
+    .header-search-bar{
+        padding: 15px 20px 15px 20px;
+        border-radius: 30px;
+        width: 330px;
+        height: 50px;
+
+        input::placeholder{
+            color: #ADB8CC;
+        }
+        
+        input, input:focus-visible{
+            width: 100%;
+            padding: 8px;
+            border: 0px !important;
+            outline: none !important;
+        }
+    }
+
+}

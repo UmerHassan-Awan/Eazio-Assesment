@@ -1,0 +1,111 @@
+<div class="main-layout">
+    <div class="app_header_wrapper">
+        <app-header></app-header>
+    </div>
+    <div class="grid ht-100 mt-0">
+        <div class="col-fixed hidden-xs sidebar_wrapper">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-fixed content_wrapper flex" style="width:92.5%">
+            <div class="page-sidebar">
+
+                <div class="top-actions flex justify-content-around">
+                    <p-button icon="pi ico-person" styleClass="p-button-rounded p-button-text p-button-raised"></p-button>
+                    <p-button icon="pi ico-dots" styleClass="p-button-rounded p-button-text p-button-raised icon-xs"></p-button>
+                </div>
+                
+                <!-- User Profile Detail -->
+                <div class="flex align-items-center flex-column mt-3">
+                    <div class="profile-image-container">
+                        <div class="profile-image">
+                            <img src="assets/images/avatars/avatar.svg" alt="Profile Image">
+                        </div>
+                        <div class="half-border">
+                            <svg width="130" height="130" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" stroke="#007bff" stroke-width="2" stroke-dasharray="270" fill="none" stroke-dashoffset="75"></circle>
+                            </svg>
+                        </div>
+                        <div class="badge">2</div>
+                    </div>
+
+                    <div class="user-info text-center mt-5">
+                        <p class="fw-700 fs-16 font-roboto text-color-grey1">Hello Alfred Bryant</p>
+                        <p class="fw-700 fs-14 font-roboto text-color-grey2 mt-4">Hello Alfred Bryant</p>
+                    </div>
+                </div>
+
+                <!-- Menus -->
+
+                <div class="menus-container flex justify-content-center mt-5 mb-5">
+                    <div class="menus">
+                        <div class="grid mt-0 ml-0 mr-0 menu-row">
+                            <div class="md:col-6 text-center">
+                                <i class="pi ico-dashboard"></i>
+                                <p class="fw-700 fs-12 font-roboto text-color-grey2 mt-4">Dashboard</p>
+                            </div>
+                            <div class="md:col-6 text-center active">
+                                <i class="pi ico-task"></i>
+                                <p class="fw-700 fs-12 font-roboto text-color-grey2 mt-4">Tasks</p>
+                            </div>
+                        </div>
+                        <div class="grid mt-0 ml-0 mr-0  menu-row">
+                            <div class="md:col-6 text-center">
+                                <i class="pi ico-invoice"></i>
+                                <p class="fw-700 fs-12 font-roboto text-color-grey2 mt-4">Invoice</p>
+                            </div>
+                            <div class="md:col-6 text-center">
+                                <i class="pi ico-cloud"></i>
+                                <p class="fw-700 fs-12 font-roboto text-color-grey2 mt-4">Files</p>
+                            </div>
+                        </div>
+                        <div class="grid mt-0 ml-0 mr-0  menu-row">
+                            <div class="md:col-6 text-center">
+                                <i class="pi ico-fire"></i>
+                                <p class="fw-700 fs-12 font-roboto text-color-grey2 mt-4">Events</p>
+                            </div>
+                            <div class="md:col-6 text-center">
+                                <i class="pi ico-team"></i>
+                                <p class="fw-700 fs-12 font-roboto text-color-grey2 mt-4">Teams</p>
+                            </div>
+                        </div>
+                        <div class="grid mt-0 ml-0 mr-0  menu-row">
+                            <div class="md:col-6 text-center">
+                                <i class="pi ico-fire"></i>
+                                <p class="fw-700 fs-12 font-roboto text-color-grey2 mt-4">Events</p>
+                            </div>
+                            <div class="md:col-6 text-center">
+                                <i class="pi ico-team"></i>
+                                <p class="fw-700 fs-12 font-roboto text-color-grey2 mt-4">Teams</p>
+                            </div>
+                        </div>
+                        <div class="grid mt-0 ml-0 mr-0  menu-row">
+                            <div class="md:col-6 text-center">
+                                <i class="pi ico-message"></i>
+                                <p class="fw-700 fs-12 font-roboto text-color-grey2 mt-4">Messages</p>
+                            </div>
+                            <div class="md:col-6 text-center">
+                                <i class="pi ico-settings"></i>
+                                <p class="fw-700 fs-12 font-roboto text-color-grey2 mt-4">Settings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-bar flex justify-content-center mt-5">
+                    <div class="socialicon-wrapper flex gap-4">
+                        <i class="pi ico-phone fs-16"></i>
+                        <i class="pi ico-envelope fs-16"></i>
+                        <i class="pi ico-preview fs-16"></i>
+                        <i class="pi ico-telegram fs-16"></i>
+                        <i class="pi ico-whatsapp fs-16"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="page-content w-full">
+                <router-outlet></router-outlet>
+            </div>
+            <!-- <router-outlet></router-outlet> -->
+        </div>
+    </div>
+</div>
